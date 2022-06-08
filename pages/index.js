@@ -1,30 +1,33 @@
-import Link from "next/link";
-import axios from "axios";
+import utilStyles from "./index.module.css";
 
-import styles from "./index.module.css";
+import Head from "next/head";
+
+import { getPostData } from "../lib/md";
 
 export async function getStaticProps() {
-  const { data } = await axios.get("https://api.magicthegathering.io/v1/cards");
+  const postData = await getPostData("index");
 
   return {
     props: {
-      cards: data.cards
+      postData
     }
   };
 }
 
-export default function Home({ cards }) {
+export default function Post({ postData }) {
   return (
-    <div className={styles.root}>
-      {cards.map(({ id, imageUrl }) => (
-        <div key={id} className={styles.card}>
-          <Link href={`/cards/${id}`}>
-            <a>
-              <img src={imageUrl} alt="" />
-            </a>
-          </Link>
+    <div>
+      <Head>
+        <title>{postData.title}</title>
+      </Head>
+
+      <article>
+        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+        <div className={utilStyles.lightText}>
+          <Date dateString={postData.date} />
         </div>
-      ))}
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      </article>
     </div>
   );
 }
