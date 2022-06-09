@@ -3,12 +3,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@babel/runtime": "^7.18.3",
     "@formspree/react": "^2.2.5",
     "axios": "0.26.1",
+    "cypress": "^10.0.3",
     "framer-motion": "6.2.9",
     "gray-matter": "^4.0.3",
     "msw": "0.39.2",
