@@ -1,4 +1,4 @@
-import utilStyles from "./index.module.css";
+import utilStyles from "../assets/css/index.module.css";
 
 import Head from "next/head";
 

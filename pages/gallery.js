@@ -1,7 +1,8 @@
 import Link from "next/link";
 import axios from "axios";
 
-import styles from "./index.module.css";
+import styles from "../assets/css/index.module.css";
+import Navbar from "./navbar";
 
 export async function getStaticProps() {
   const { data } = await axios.get("https://api.magicthegathering.io/v1/cards");
@@ -16,6 +17,7 @@ export async function getStaticProps() {
 export default function Home({ cards }) {
   return (
     <div className={styles.root}>
+      <Navbar />
       {cards.map(({ id, imageUrl }) => (
         <div key={id} className={styles.card}>
           <Link href={`/cards/${id}`}>
