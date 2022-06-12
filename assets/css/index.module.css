@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #65655E;
+  font-size: 0.800em;
+  width: 800px;
+  margin: 0 auto;
+}
+  
+.image {
+  height: 200px;
+  border-radius: 20px;
+  position: relative;
+  top: -25px;
+}
+
+.card {
+  display: flex;
+  margin: 20px;
+  width: 350px;
+  height: 210px;
+  background-color: #FFF8F8;
+  border-radius: 20px;
+}
+
+.title_bloc {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.title {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.subtitle {
+  font-size: 0.720em;
+  margin-top: 5px;
+}
+
+.button {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: none;
+  color: #C6AFB1;
+  border: solid 1px #C6AFB1;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 0.700em;
+  text-align: center;
+  outline: none;
+  width: 48px;
+  height: 11px;
+  padding: 6px;
+  margin: 50px 20px;
+}
+
+.logo {
+  width: 250px;
+  height: 100px;
+  margin: 40px auto;
+  display: flex;
+}
+
+.detail {
+  display: flex;
+  margin: 80px auto;
+  width: 550px;
+  height: 220px;
+  background-color: #FFF8F8;
+  border-radius: 20px;
+}
+
+.description {
+  font-size:  0.780em;
+  font-style: italic;
+  width: 300px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.director {
+  background-color: #cebacf;
+  width: 30%;
+  font-size: 0.780em;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 3px;
+}
+
+.year {
+  background-color: #B0A3D4;
+  width: 10%;
+  font-size: 0.780em;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 3px;
+  margin-left: 10px;
+}
+
+.align {
+  display: flex;
+  margin-top: 20px;
+}
+
+.back {
+  width: 24px;
+}
+
+.homeTitle {
+  text-align: center;
+  color: #7D80DA;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2.2em;
+  margin-bottom: 0;
+}
+
+.homeSubtitle {
+  text-align: center;
+  color: #65655E;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.780em;
+}
+
+.homeDescription {
+  margin: 50px auto;
+  width: 600px;
+  text-align: justify;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.780em;
+}
+
+.homeBtn {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #B0A3D4;
+  color: white;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 0.700em;
+  text-align: center;
+  outline: none;
+  width: 100px;
+  height: 30px;
+  padding: 12px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.licence {
+  margin: 200px auto;;
+  width: 600px;
+}

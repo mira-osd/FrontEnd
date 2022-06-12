@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.container {
+    font-family: 'Montserrat', Arial, sans-serif;
+    border: solid 2px #B0A3D4;
+    border-radius: 25px;
+    max-width: 40%;
+    margin: 5% auto;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    padding-bottom: 7%;
+}
+
+.name input {
+    color: #5A5A5A;
+    font: inherit;
+    background: none;
+    border: none;
+    border-bottom: solid 2px #B0A3D4;
+    font-size: 0.820em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+    outline: none;
+    width: 100%;
+}
+
+.name {
+    width: 100%;
+    padding-right: 10%;
+}
+
+.email input {
+    color: #5A5A5A;
+    font: inherit;
+    background: none;
+    border: none;
+    border-bottom: solid 2px #B0A3D4;
+    font-size: 0.820em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.975em 0;
+    text-transform: uppercase;
+    outline: none;
+    width: 100%;
+}
+
+.email {
+    width: 100%;
+}
+
+.message textarea {
+    color: #5A5A5A;
+    font: inherit;
+    background: none;
+    border: none;
+    border-bottom: solid 2px #B0A3D4;
+    font-size: 0.820em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+    outline: none;
+    width: 100%;
+}
+
+.message {
+    width: 100%;
+}
+
+.submit {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: none;
+    border: solid 2px #B0A3D4;
+    color: #5A5A5A;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.820em;
+    font-weight: bold;
+    outline: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    width: 250px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    color: #7D80DA; 
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.400em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5% 0 1% 0;
+}
+
+.subtitle {
+    color: #474544;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 0.700em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.response {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.titleResponse {
+    font-weight: bold;
+    font-size: 1.200em;
+    color: #474544;
+}
