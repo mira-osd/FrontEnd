@@ -1,5 +1,68 @@
-.root {
-    display: flex;
-    flex-wrap: wrap;
-  }
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #65655E;
+  font-size: 0.800em;
+  width: 800px;
+  margin: 0 auto;
+}
   
+.image {
+  height: 200px;
+  border-radius: 20px;
+  position: relative;
+  top: -25px;
+}
+
+.card {
+  display: flex;
+  margin: 20px;
+  width: 350px;
+  height: 210px;
+  background-color: #FFF8F8;
+  /* background-image: linear-gradient(#FFF8F8 83.5%, #ffffff 0%); */
+  border-radius: 20px;
+}
+
+.title_bloc {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.title {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.subtitle {
+  font-size: 0.720em;
+  margin-top: 5px;
+}
+
+.button {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: none;
+  color: #C6AFB1;
+  border: solid 1px #C6AFB1;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 0.700em;
+  text-align: center;
+  outline: none;
+  width: 48px;
+  height: 11px;
+  padding: 6px;
+  margin: 50px 20px;
+}
+
+.logo {
+  width: 250px;
+  height: 100px;
+  margin: 40px auto;
+  display: flex;
+}

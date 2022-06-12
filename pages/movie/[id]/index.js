@@ -2,11 +2,11 @@ import axios from "axios";
 
 export async function getStaticPaths() {
   const { data } = await axios.get(
-    `https://api.magicthegathering.io/v1/cards/`
+    `https://ghibliapi.herokuapp.com/films`
   );
 
   return {
-    paths: data.cards.map(({ id }) => `/cards/${id}`),
+    paths: data.map(({ id }) => `/movie/${id}`),
     fallback: false
   };
 }
@@ -15,24 +15,24 @@ export async function getStaticProps({ params }) {
   const { id } = params;
 
   const { data } = await axios.get(
-    `https://api.magicthegathering.io/v1/cards/${id}`
+    `https://ghibliapi.herokuapp.com/films/${id}`
   );
 
   return {
     props: {
-      card: data.card
+      films: data
     }
   };
 }
 
-export default function Card({ card }) {
-  console.log(card);
+export default function Card({ films }) {
+  console.log('card', films );
 
   return (
     <div>
-      <h2>{card.name}</h2>
+      <h2>{films.title}</h2>
       <div>
-        <img src={card.imageUrl} alt="" />
+        <img src={films.image} alt="" />
       </div>
     </div>
   );
