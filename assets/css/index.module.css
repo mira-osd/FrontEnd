@@ -66,3 +66,50 @@
   margin: 40px auto;
   display: flex;
 }
+
+.detail {
+  display: flex;
+  margin: 20px auto;
+  width: 500px;
+  height: 210px;
+  background-color: #FFF8F8;
+  border-radius: 20px;
+}
+
+.description {
+  font-size:  0.740em;
+  font-style: italic;
+  width: 300px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.director {
+  background-color: #cebacf;
+  width: 30%;
+  font-size: 0.700em;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 3px;
+}
+
+.year {
+  background-color: #B0A3D4;
+  width: 10%;
+  font-size: 0.700em;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 3px;
+  margin-left: 10px;
+}
+
+.align {
+  display: flex;
+  margin-top: 20px;
+}
+
+.back {
+  width: 24px;
+}
