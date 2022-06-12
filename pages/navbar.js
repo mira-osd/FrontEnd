@@ -8,7 +8,6 @@ const links = [
   { name: "Gallery", to: "/gallery", id: 2 },
   { name: "Contact", to: "/contact", id: 3 },
   { name: "Licence", to: "/licence", id: 4 },
-
 ];
 
 const itemVariants = {

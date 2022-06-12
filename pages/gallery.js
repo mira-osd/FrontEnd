@@ -24,7 +24,7 @@ export default function Home({ films }) {
       {films.map(({ id, image, title, original_title }) => (
         <motion.div key={id} whileHover={{ scale: 1.1 }} className={styles.card}>
           <div>
-          <Link href={`/movie/${id}`}>
+            <Link href={`/movie/${id}`}>
               <a>
                 <img src={image} alt="" className={styles.image}/>
               </a>

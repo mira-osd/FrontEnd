@@ -2,7 +2,8 @@
 
 .container {
     font-family: 'Montserrat', Arial, sans-serif;
-    border: solid 2px #3E505E;
+    border: solid 2px #B0A3D4;
+    border-radius: 25px;
     max-width: 40%;
     margin: 5% auto;
     padding: 5%;
@@ -21,7 +22,7 @@
     font: inherit;
     background: none;
     border: none;
-    border-bottom: solid 2px #474544;
+    border-bottom: solid 2px #B0A3D4;
     font-size: 0.820em;
     font-weight: 400;
     letter-spacing: 1px;
@@ -42,7 +43,7 @@
     font: inherit;
     background: none;
     border: none;
-    border-bottom: solid 2px #474544;
+    border-bottom: solid 2px #B0A3D4;
     font-size: 0.820em;
     font-weight: 400;
     letter-spacing: 1px;
@@ -62,7 +63,7 @@
     font: inherit;
     background: none;
     border: none;
-    border-bottom: solid 2px #474544;
+    border-bottom: solid 2px #B0A3D4;
     font-size: 0.820em;
     font-weight: 400;
     letter-spacing: 1px;
@@ -80,8 +81,8 @@
 .submit {
     font-family: 'Montserrat', Arial, sans-serif;
     background: none;
-    border: solid 2px #474544;
-    color: #474544;
+    border: solid 2px #B0A3D4;
+    color: #5A5A5A;
     cursor: pointer;
     display: inline-block;
     font-size: 0.820em;
@@ -92,6 +93,9 @@
     width: 250px;
     height: 40px;
     margin: 0 auto;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 .title {
@@ -110,4 +114,17 @@
     font-size: 0.700em;
     font-weight: 400;
     text-align: center;
+}
+
+.response {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.titleResponse {
+    font-weight: bold;
+    font-size: 1.200em;
+    color: #474544;
 }

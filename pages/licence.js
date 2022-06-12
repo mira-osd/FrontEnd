@@ -14,11 +14,11 @@ export async function getStaticProps() {
 export default function Licence({ postData }) {
   return (
     <div>
-        <Navbar />
-        <div 
+      <Navbar />
+      <div 
         dangerouslySetInnerHTML={{ __html: postData.contentHtml }} 
         className={utilStyles.licence}
-        />
+      />
     </div>
   );
 }

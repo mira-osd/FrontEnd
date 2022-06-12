@@ -24,7 +24,7 @@ export default function Post({ postData }) {
         <div className={utilStyles.homeDescription}>{postData.homeDescription}</div>
         <div className={utilStyles.center}>
           <motion.div whileHover={{ scale: 1.1 }}>
-            <Link href={"/gallery"}>
+            <Link href={`/gallery`}>
               <a className={utilStyles.homeBtn}>
                 Discover
               </a>

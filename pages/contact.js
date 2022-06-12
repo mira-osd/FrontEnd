@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import styles from "../assets/css/contact.module.css";
+import { motion } from "framer-motion";
 
 import Navbar from "./navbar";
 
@@ -8,7 +9,13 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("xzboweaj");
   const [name, setName] = useState("");
   if (state.succeeded) {
-      return <p>Merci {name} 😊</p>;
+      return <div>
+        <Navbar />
+        <div className={styles.response}>
+          <div className={styles.titleResponse}>Thank you {name} 😊</div>
+          <div className={styles.titleResponse}>We'll get back to you soon</div>
+        </div>
+      </div>;
   }
   return (
       <div>
@@ -62,9 +69,12 @@ function ContactForm() {
                 errors={state.errors}
               />
             </div>
-            <button type="submit" disabled={state.submitting} className={styles.submit}>
-              Envoyer mon message
-            </button>
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <button type="submit" disabled={state.submitting} className={styles.submit}>
+                Envoyer mon message
+              </button>
+            </motion.div>
+
         </form>
     </div>
   );
