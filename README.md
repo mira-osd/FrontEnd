@@ -4,6 +4,7 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
 ## Description
 School project at EEMI school - Front-end development.
+** You can find the demo at https://ghibli-frontend.vercel.app/ **
 
 ### Commands
 
