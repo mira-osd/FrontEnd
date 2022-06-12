@@ -6,7 +6,9 @@ import styles from "../assets/css/navbar.module.css";
 const links = [
   { name: "Home", to: "/", id: 1 },
   { name: "Gallery", to: "/gallery", id: 2 },
-  { name: "Contact", to: "/contact", id: 3 }
+  { name: "Contact", to: "/contact", id: 3 },
+  { name: "Licence", to: "/licence", id: 4 },
+
 ];
 
 const itemVariants = {

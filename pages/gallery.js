@@ -1,6 +1,6 @@
 import Link from "next/link";
 import axios from "axios";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 import styles from "../assets/css/index.module.css";
 import Navbar from "./navbar";

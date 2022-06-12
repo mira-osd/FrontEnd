@@ -29,8 +29,6 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Card({ films }) {
-  console.log('card', films );
-
   return (
     <div>
       <Navbar />
