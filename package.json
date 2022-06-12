@@ -4,7 +4,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "cypress:open": "cypress open"
+    "test": "cypress open"
   },
   "dependencies": {
     "@babel/runtime": "^7.18.3",
