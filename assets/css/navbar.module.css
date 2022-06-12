@@ -1,11 +1,45 @@
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 .nav {
     background-color: #B0A3D4;
-    border-radius: 20px;
-    height: 50px;
-    width: 20%;
-    display: flex;
+    color: #fff;
+    width: 80px;
+    height: 40px;
     align-items: center;
-    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    position: fixed;
+    top: 190px;
+    left: 15px;
+    z-index: 2;
+    font-size: 0.720em;
+}
+
+.open_nav {
+    margin: 4.5rem 1.4rem;
+}
+
+.aside {
+    background-color: #B0A3D4;
+    border-radius: 20px;
+    width: 10rem;
+    height: 100vh;
+    font-family: 'Montserrat', Arial, sans-serif;
+    position: fixed;
+    top: 182px;
+    z-index: 1;
+}
+
+.aside a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.780em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
 }
 
 .center {

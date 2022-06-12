@@ -35,9 +35,6 @@ export default function Card({ films }) {
     <div>
       <Navbar />
       <img src="/images/logo.png" className={styles.logo} alt="logo" />
-      <div>
-        <img src="/images/back.png" className={styles.back} alt="back"></img>
-      </div>
       <div className={styles.cont}>
         <div className={styles.detail}>
           <div>

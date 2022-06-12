@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from 'next/image'
 import axios from "axios";
+import { motion } from "framer-motion"
 
 import styles from "../assets/css/index.module.css";
 import Navbar from "./navbar";
@@ -20,9 +20,9 @@ export default function Home({ films }) {
     <div>
       <Navbar />
       <img src="/images/logo.png" className={styles.logo} alt="logo" />
-      <div className={styles.cont}>
+      <motion.div animate={{ scale: [0.3, 1], }} transition={{ duration: 0.7 }} className={styles.cont}>
       {films.map(({ id, image, title, original_title }) => (
-        <div key={id} className={styles.card}>
+        <motion.div key={id} whileHover={{ scale: 1.1 }} className={styles.card}>
           <div>
           <Link href={`/movie/${id}`}>
               <a>
@@ -43,9 +43,9 @@ export default function Home({ films }) {
               </a>
             </Link>
           </div>
-        </div>
+        </motion.div>
       ))}
-      </div>
+      </motion.div>
     </div>
   );
 }
